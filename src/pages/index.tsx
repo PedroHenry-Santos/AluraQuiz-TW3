@@ -25,7 +25,7 @@ const Home: React.FC = () => {
         title="The Witcher"
         content="Projeto criado durante a imersão react v2, promovida pela Alura."
         urlSite="https://alura-quiz-tw-3-pedrohenry-santos.vercel.app/"
-        urlImage="../assets/ImageHome.png"
+        urlImage="https://animation-app-read.s3-sa-east-1.amazonaws.com/App_alura/ImageHome.png"
       />
       <QuizBackground>
         <QuizContainer>
