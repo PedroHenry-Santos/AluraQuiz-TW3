@@ -20,35 +20,27 @@ const QuizContainer = styled.div`
 
 const Home: React.FC = () => {
   return (
-    <>
-      <HeadPage
-        title="The Witcher"
-        content="Projeto criado durante a imersão react v2, promovida pela Alura."
-        urlSite="https://alura-quiz-tw-3-pedrohenry-santos.vercel.app/"
-        urlImage="https://animation-app-read.s3-sa-east-1.amazonaws.com/App_alura/ImageHome.png"
-      />
-      <QuizBackground>
-        <QuizContainer>
-          <Widget>
-            <Header>
-              <h1>The Witcher 3</h1>
-            </Header>
+    <QuizBackground>
+      <QuizContainer>
+        <Widget>
+          <Header>
+            <h1>The Witcher 3</h1>
+          </Header>
 
-            <Content>
-              <p>Alguma descrição aleatoria!</p>
-            </Content>
-          </Widget>
-          <Widget>
-            <Content>
-              <h1>Quizes da galera!</h1>
-              <p>Alguma descrição aleatoria!</p>
-            </Content>
-          </Widget>
-          <Footer />
-        </QuizContainer>
-        <GitHubCorner projectUrl="https://github.com/PedroHenry-Santos" />
-      </QuizBackground>
-    </>
+          <Content>
+            <p>Alguma descrição aleatoria!</p>
+          </Content>
+        </Widget>
+        <Widget>
+          <Content>
+            <h1>Quizes da galera!</h1>
+            <p>Alguma descrição aleatoria!</p>
+          </Content>
+        </Widget>
+        <Footer />
+      </QuizContainer>
+      <GitHubCorner projectUrl="https://github.com/PedroHenry-Santos" />
+    </QuizBackground>
   );
 };
 

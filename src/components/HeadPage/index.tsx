@@ -1,6 +1,3 @@
-import Head from 'next/head';
-import { Content } from '../Widget';
-
 interface Props {
   title: string;
   content?: string;
@@ -8,19 +5,30 @@ interface Props {
   urlImage?: string;
 }
 
-const HeadPage: React.FC<Props> = ({ title, urlSite, urlImage }) => {
+const HeadPage: React.FC<Props> = ({
+  title,
+  content,
+  urlSite,
+  urlImage = ''
+}) => {
   return (
-    <Head>
+    <>
       <title>{title}</title>
       <meta name="title" content={title} />
-      <meta name="description" content={Content} />
+      <meta name="description" content={content} />
 
       <meta property="og:type" content="website" />
       <meta property="og:url" content={urlSite} />
       <meta property="og:title" content={title} />
-      <meta property="og:description" content={Content} />
+      <meta property="og:description" content={content} />
       <meta property="og:image" content={urlImage} />
-    </Head>
+
+      <meta property="twitter:card" content="summary_large_image" />
+      <meta property="twitter:url" content={urlSite} />
+      <meta property="twitter:title" content={title} />
+      <meta property="twitter:description" content={content} />
+      <meta property="twitter:image" content={urlImage} />
+    </>
   );
 };
 
