@@ -1,5 +1,5 @@
 {
-  "bg": "https://www.hitalent.co/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBMmJDQXc9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--1452099b706ad7d079f7a3a4dd5d702ebeeae45f/HiTalent.png",
+  "bg": "https://images4.alphacoders.com/587/thumb-1920-587508.png",
   "title": "Quiz JavaScript #AluraQuiz",
   "description": "Um quiz rápido sobre o mundo do JavaScript",
   "questions": [
@@ -46,5 +46,17 @@
   "external": [
     "https://aluraquiz-css.omariosouto.vercel.app/",
     "https://aluraquiz-devsoutinho.omariosouto.vercel.app/"
-  ]
+  ],
+  "theme": {
+    "colors": {
+      "primary": "#2196f3",
+      "secondary": "#ff5722",
+      "mainBg": "#171B35",
+      "contrastText": "#F9FBFF",
+      "wrong": "#f44336",
+      "success": "#8bc34a"
+    },
+    "borderRadius": "4px"
+  }
+
 }

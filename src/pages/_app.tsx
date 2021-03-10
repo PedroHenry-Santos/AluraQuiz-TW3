@@ -1,6 +1,6 @@
 import { createGlobalStyle, ThemeProvider } from 'styled-components';
 import { AppProps } from 'next/app';
-import themes from '../styles/themes';
+import theme from '../styles/theme';
 
 const GlobalStyle = createGlobalStyle`
   * {
@@ -13,7 +13,7 @@ const GlobalStyle = createGlobalStyle`
     display: flex;
     flex-direction: column;
     font-family: 'Lato', sans-serif;
-    color: ${themes.color.contrastText};
+    color: ${theme.colors.contrastText};
   }
 
   html, body {
@@ -26,8 +26,6 @@ const GlobalStyle = createGlobalStyle`
     flex-direction: column;
   }
 `;
-
-const theme = themes;
 
 const App: React.FC<AppProps> = ({ Component, pageProps }) => {
   return (

@@ -9,8 +9,8 @@ const Wrapper = styled.div`
 `;
 
 const SVGWrapper = styled.svg`
-  fill: ${({ theme }) => theme.color.secundary};
-  color: ${({ theme }) => theme.color.contrastText};
+  fill: ${({ theme }) => theme.colors.secondary};
+  color: ${({ theme }) => theme.colors.contrastText};
   cursor: pointer;
   &:hover .octo-arm {
     animation: octocat-wave 560ms ease-in-out;

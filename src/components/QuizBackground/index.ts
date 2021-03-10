@@ -5,8 +5,8 @@ const QuizBackground = styled.div`
   height: 100vh;
   background-size: cover;
   background-position: center;
-  background-image: url('${(props) => props.theme.background}');
-  background-color: ${(props) => props.theme.color.mainBg};
+  background-image: url('${props => props.theme.bg}');
+  background-color: ${props => props.theme.colors.contrastText};
   flex: 1;
   @media screen and (max-width: 500px) {
     background-image: none;
@@ -16,9 +16,9 @@ const QuizBackground = styled.div`
       background-position: center;
       background-image: linear-gradient(
           transparent,
-          ${(props) => props.theme.color.mainBg}
+          ${props => props.theme.colors.mainBg}
         ),
-        url(${(props) => props.theme.background});
+        url(${props => props.theme.bg});
       display: block;
       width: 100%;
       height: 210px;

@@ -1,24 +1,16 @@
 import { useState } from 'react';
-import styled from 'styled-components';
 import { useRouter } from 'next/router';
 
-import { Widget, Header, Content } from '../components/Widget';
+import { Widget, Header, Content, Topic } from '../components/Widget';
 import QuizBackground from '../components/QuizBackground';
 import Footer from '../components/Footer';
 import GitHubCorner from '../components/GitHubCorner';
 import QuizLogo from '../components/QuizLogo';
-
-const QuizContainer = styled.div`
-  width: 100%;
-  max-width: 350px;
-  padding-top: 45px;
-  margin: auto 10%;
-
-  @media screen and (max-width: 500px) {
-    margin: auto;
-    padding: 15px;
-  }
-`;
+import Input from '../components/Input';
+import Button from '../components/Button';
+import QuizContainer from '../components/QuizContainer';
+import db from '../../db.json';
+import Link from '../components/Link';
 
 const Home: React.FC = () => {
   const router = useRouter();
@@ -34,28 +26,46 @@ const Home: React.FC = () => {
           </Header>
           <Content>
             <form
-              onSubmit={(e) => {
+              onSubmit={e => {
                 e.preventDefault();
                 router.push(`/quiz?name=${name}`);
               }}
             >
-              <input
-                onChange={(e) => {
+              <Input
+                name="nomeDoUsuario"
+                onChange={e => {
                   setName(e.target.value);
                 }}
-                type="text"
-                placeholder=""
+                placeholder="Diz ai seu nome!"
+                value={name}
               />
-              <button type="submit" disabled={name.length === 0}>
-                Jogar{` ${name}`}
-              </button>
+              <Button type="submit" disabled={name.length === 0}>
+                {`Jogar ${name}`}
+              </Button>
             </form>
           </Content>
         </Widget>
         <Widget>
           <Content>
             <h1>Quizes da galera!</h1>
-            <p>Alguma descrição aleatoria!</p>
+            <ul>
+              {db.external.map((e, index) => {
+                const [projectName, gitUser] = e
+                  .replace(/\//g, '')
+                  .replace('https:', '')
+                  .replace('.vercel.app', '')
+                  .split('.');
+
+                return (
+                  <li key={index}>
+                    <Topic
+                      as={Link}
+                      href={`/quiz/${projectName}___${gitUser}`}
+                    >{`${projectName}/${gitUser}`}</Topic>
+                  </li>
+                );
+              })}
+            </ul>
           </Content>
         </Widget>
         <Footer />
