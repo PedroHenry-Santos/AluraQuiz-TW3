@@ -31,7 +31,7 @@ const IdIndex: React.FC<IndexProps> = ({ dbExternal }) => {
 export default IdIndex;
 
 export const getServerSideProps: GetServerSideProps<IndexProps> = async ctx => {
-  const [projectName, gitUser] = ctx.query.id.split('___');
+  const [projectName, gitUser] = (ctx.query.id as string).split('___');
 
   const dbExternal = await fetch(
     `https://${projectName}-${gitUser}.vercel.app/api/db`
