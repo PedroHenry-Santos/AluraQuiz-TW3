@@ -14,7 +14,7 @@ export default Index;
 
 export const getServerSideProps: GetServerSideProps<IndexProps> = async ctx => {
   const dbExternal = await fetch(
-    'https://alura-quiz-tw-3-pedrohenry-santos.vercel.app/'
+    'https://alura-quiz-tw-3-pedrohenry-santos.vercel.app/api/db'
   )
     .then(respServer => {
       if (respServer.ok) {
