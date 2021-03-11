@@ -2,11 +2,11 @@ import styled from 'styled-components';
 
 const QuizBackground = styled.div`
   width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
   background-size: cover;
   background-position: center;
   background-image: url('${props => props.theme.bg}');
-  background-color: ${props => props.theme.colors.contrastText};
+  background-color: ${props => props.theme.colors.mainBg};
   flex: 1;
   @media screen and (max-width: 500px) {
     background-image: none;
