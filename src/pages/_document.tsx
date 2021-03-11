@@ -56,7 +56,7 @@ export default class MyDocument extends Document {
             title="The Witcher"
             content="Projeto criado durante a imersão react v2, promovida pela Alura."
             urlSite="https://alura-quiz-tw-3-pedrohenry-santos.vercel.app/"
-            urlImage="../../../public/ImageHome.jpg"
+            urlImage="https://animation-app-read.s3-sa-east-1.amazonaws.com/App_alura/ImageHome.jpg"
           />
         </Head>
         <body>
