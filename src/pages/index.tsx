@@ -32,9 +32,17 @@ const Home: React.FC = () => {
           animate="show"
         >
           <Header>
-            <h1>The Witcher 3</h1>
+            <h1>{`${db.title}`}</h1>
           </Header>
           <Content>
+            <p
+              style={{
+                textAlign: 'justify',
+                fontSize: '16px',
+                padding: '0 10px',
+                paddingBottom: '20px'
+              }}
+            >{`${db.description}`}</p>
             <form
               onSubmit={e => {
                 e.preventDefault();
