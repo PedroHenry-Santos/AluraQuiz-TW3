@@ -1,3 +1,4 @@
+import { motion } from 'framer-motion';
 import styled from 'styled-components';
 
 const FooterWrapper = styled.footer`
@@ -24,10 +25,18 @@ const FooterWrapper = styled.footer`
   }
 `;
 
-const Footer: React.FC = props => {
+const Footer: React.FC = () => {
   return (
-    // eslint-disable-next-line react/jsx-props-no-spreading
-    <FooterWrapper {...props}>
+    <FooterWrapper
+      as={motion.footer}
+      transition={{ delay: 0.4, duration: 0.6 }}
+      variants={{
+        show: { opacity: 1 },
+        hidden: { opacity: 0 }
+      }}
+      initial="hidden"
+      animate="show"
+    >
       <a href="https://www.alura.com.br/" rel="noreferrer" target="_blank">
         <img
           src="https://www.alura.com.br/assets/img/alura-logo-white.1570550707.svg"

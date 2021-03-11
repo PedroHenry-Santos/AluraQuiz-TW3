@@ -31,7 +31,6 @@ const QuestionWidget: React.FC<Props> = ({
   const [selectedAlternative, setSelectedAlternative] = useState<
     number | undefined
   >(undefined);
-  const [isFormSubmited, setIsFormSubmited] = useState(false);
   const isCorrect = selectedAlternative === question.answer;
   const hasAlternaticeSelected = selectedAlternative !== undefined;
 
@@ -56,10 +55,9 @@ const QuestionWidget: React.FC<Props> = ({
         <AlternativesForm
           onSubmit={e => {
             e.preventDefault();
-            setIsFormSubmited(true);
+            localStorage.setItem('result', `${isCorrect}`);
             setTimeout(() => {
               addResult(isCorrect);
-              setIsFormSubmited(false);
               setSelectedAlternative(undefined);
               onSubmit();
             }, 1000);
@@ -68,7 +66,6 @@ const QuestionWidget: React.FC<Props> = ({
           {question.alternatives.map(
             (alternative: string, alternativeIndex: number) => {
               const alternativeId = `alternative__${alternativeIndex}`;
-              const alternativeStatus = isCorrect ? 'SUCCESS' : 'ERROR';
               const isSelected = selectedAlternative === alternativeIndex;
               console.log(isSelected);
 
@@ -78,7 +75,6 @@ const QuestionWidget: React.FC<Props> = ({
                   as="label"
                   htmlFor={alternativeId}
                   data-selected={isSelected}
-                  data-status={isFormSubmited && alternativeStatus}
                 >
                   <input
                     style={{ display: 'none' }}
@@ -95,8 +91,6 @@ const QuestionWidget: React.FC<Props> = ({
           <Button type="submit" disabled={!hasAlternaticeSelected}>
             Confirmar
           </Button>
-          {isFormSubmited && isCorrect && <p>Você acertou!</p>}
-          {isFormSubmited && !isCorrect && <p>Você errou!</p>}
         </AlternativesForm>
       </Content>
     </Widget>

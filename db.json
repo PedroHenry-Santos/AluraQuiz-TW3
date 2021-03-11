@@ -4,48 +4,55 @@
   "description": "Um quiz rápido sobre o mundo do JavaScript",
   "questions": [
     {
-      "image": "https://media.giphy.com/media/j5P0DQIOf4PonLi55G/giphy.gif",
-      "title": "Qual a diferença entre = , == e === ?",
-      "description": "Pergunta fácil em!",
-      "answer": 1,
+      "image": "https://gamehall.com.br/wp-content/uploads/2015/05/witcher-3-matando-vacas.gif",
+      "title": "O que acontece quando matamos muitas vaquinhas em TW3?",
+      "description": "Muita crueldade :(",
+      "answer": 3,
       "alternatives": [
-        "São a mesma coisa",
-        "O = significa atribuição de valor. Já == verifica a igualdade do valor, enquanto === verifica valor e tipo de variável."
+        "Você recebe o titulo de 'Abatedor feroz'",
+        "Você perde todo progresso do jogo",
+        "As vacas viram zumbis",
+        "O 'Chorabash' te dá um carinho"
       ]
     },
     {
-      "image": "https://media.giphy.com/media/Ie2Hs3A0uJRtK/giphy.gif",
-      "title": "Que tipos de dados são suportados em JavaScript?",
-      "description": "E agora? Você sabe?",
+      "image": "https://valedopontar.com.br/wp-content/uploads/2018/03/Geralt-olhando.gif",
+      "title": "The Witcher 3 tem quantas premiações?",
+      "description": "E só para quem pode <3",
+      "answer": 1,
+      "alternatives": [
+        "35 premiações",
+        "251 premiações",
+        "80 premiações",
+        "125 premiações"
+
+      ]
+    },
+    {
+      "image": "https://i.pinimg.com/originals/e7/1f/ad/e71fad723397490bb8031e9c264ae0e8.gif",
+      "title": "Os movimentos do Geralt foram gerados apartir dos movimentos de um espadachim profissional?",
       "answer": 0,
       "alternatives": [
-        "Number, String, Undefined, Null e Bool.",
-        "Int, String, Undefined, Null e Bool."
+        "Sim",
+        "Não"
       ]
     },
     {
-      "image": "https://media.giphy.com/media/iI4vhciiVh2b3j9sgo/giphy.gif",
-      "title": "Qual a diferença de window e global?",
+      "image": "https://pa1.narvii.com/6714/0ac3e0789d76e9cde54416d5a2137a4731135806_hq.gif",
+      "title": "É verdade que a Netflix não adaptou a egua voadora de Geralt, contrariando os livros?",
+      "description": "Conserteza a melhor coisa de The Witcher 3...",
       "answer": 1,
       "alternatives": [
-        "São a mesma coisa",
-        "window é o escopo global no browser, e global no node"
-      ]
-    },
-    {
-      "image": "https://media.giphy.com/media/iI4vhciiVh2b3j9sgo/giphy.gif",
-      "title": "Qual a forma antiga de trabalhar com AJAX na Web?",
-      "answer": 1,
-      "alternatives": [
-        "JSONHttpRequest",
-        "XMLHttpRequest",
-        "fetch"
+        "Sim",
+        "Não"
+
       ]
     }
   ],
   "external": [
-    "https://aluraquiz-css.omariosouto.vercel.app/",
-    "https://aluraquiz-devsoutinho.omariosouto.vercel.app/"
+    "https://1sec-quiz.victoroda.vercel.app/",
+    "https://harry-potter-quiz.brunogerbasi.vercel.app/",
+    "https://thesimpsonsquiz.gabriel-brasil.vercel.app/"
   ],
   "theme": {
     "colors": {

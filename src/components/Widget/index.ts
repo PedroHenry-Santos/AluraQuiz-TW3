@@ -18,8 +18,8 @@ const Widget = styled.div`
   }
 
   p {
-    font-size: 14px;
-    font-weight: 400;
+    font-size: 16px;
+    font-weight: 500;
     line-height: 1;
   }
 `;
@@ -48,6 +48,34 @@ const Content = styled.header`
     list-style: none;
     padding: 0;
   }
+
+  .bt {
+    width: 100%;
+    border: 0;
+    border-radius: ${({ theme }) => theme.borderRadius};
+    background-color: ${({ theme }) => `${theme.colors.primary}40`};
+    margin-bottom: 10px;
+    transition: 0.3s;
+    &:disabled {
+      background-color: #979797;
+      cursor: not-allowed;
+    }
+    &:hover,
+    &:focus {
+      opacity: 0.5;
+    }
+
+    a {
+      font-size: 16px;
+      width: 100%;
+      padding: 10px 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      color: ${({ theme }) => theme.colors.contrastText};
+    }
+  }
 `;
 
 const Topic = styled.a`
@@ -61,7 +89,6 @@ const Topic = styled.a`
   border-radius: ${({ theme }) => theme.borderRadius};
   transition: 0.3s;
   display: block;
-
   &:hover,
   &:focus {
     opacity: 0.5;

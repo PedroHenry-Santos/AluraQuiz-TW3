@@ -1,13 +1,17 @@
 import { GetServerSideProps } from 'next';
+import Lottie from 'react-lottie';
+
 import { ThemeProvider } from 'styled-components';
 import { DbExternal } from '../../@types/dbExternal';
 import QuizPage from '../../components/QuizPage';
+import Loading from '../../assets/loading.json';
 
 export interface IndexProps {
   dbExternal: DbExternal;
+  name: string | string[] | undefined;
 }
 
-const IdIndex: React.FC<IndexProps> = ({ dbExternal }) => {
+const IdIndex: React.FC<IndexProps> = ({ dbExternal, name }) => {
   const theme = {
     colors: {
       primary: dbExternal.theme.colors.primary,
@@ -21,9 +25,20 @@ const IdIndex: React.FC<IndexProps> = ({ dbExternal }) => {
     bg: dbExternal.bg
   };
 
+  const loading = {
+    loop: true,
+    autoplay: true,
+    animationData: Loading,
+    rendererSettings: {
+      preserveAspectRatio: 'xMidYMid slice'
+    }
+  };
+
   return (
     <ThemeProvider theme={theme}>
-      <QuizPage dbExternal={dbExternal} />
+      <QuizPage name={name} dbExternal={dbExternal}>
+        <Lottie options={loading}></Lottie>
+      </QuizPage>
     </ThemeProvider>
   );
 };
@@ -32,6 +47,7 @@ export default IdIndex;
 
 export const getServerSideProps: GetServerSideProps<IndexProps> = async ctx => {
   const [projectName, gitUser] = (ctx.query.id as string).split('___');
+  const { name } = ctx.query;
 
   const dbExternal = await fetch(
     `https://${projectName}-${gitUser}.vercel.app/api/db`
@@ -48,7 +64,8 @@ export const getServerSideProps: GetServerSideProps<IndexProps> = async ctx => {
 
   return {
     props: {
-      dbExternal
+      dbExternal,
+      name
     }
   };
 };
