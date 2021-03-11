@@ -147,6 +147,8 @@ Para isso basta seguir o [roteiro](https://github.com/PedroHenry-Santos/AluraQui
 
 ## :heavy_check_mark: Roteiro de funcionalidade da aplicação
 
+Para um acompanhamento mais atualizado verifique a aba [Projeto](https://github.com/PedroHenry-Santos/AluraQuiz-TW3/projects/1).
+
 -   [x] Página de identificação                               (:warning: Pode sofrer modificações)
 -   [x] Tela de carregamento para apresentar o Quiz           (:warning: Pode sofrer modificações)
 -   [x] Resposta interativa após cada pergunta                (:warning: Pode sofrer modificações)
@@ -160,6 +162,10 @@ Para isso basta seguir o [roteiro](https://github.com/PedroHenry-Santos/AluraQui
 ## :clock10: Historico de atualizações
 
 Para saber sobre as [versões](https://github.com/PedroHenry-Santos/AluraQuiz-TW3/releases) deste codigo consulte o CHANGELOG detalhado.
+
+# :lock: Licença
+
+[MIT License](https://github.com/PedroHenry-Santos/AluraQuiz-TW3/blob/main/LICENCE.md) ® [Pedro Santos](https://github.com/PedroHenry-Santos)
 
 
 
