@@ -1,3 +1,11 @@
+## [1.0.1](https://github.com/PedroHenry-Santos/AluraQuiz-TW3/compare/v1.0.0...v1.0.1) (2021-03-11)
+
+
+### Bug Fixes
+
+* **database:** corrected question data in the database ([39ef0ed](https://github.com/PedroHenry-Santos/AluraQuiz-TW3/commit/39ef0ed79396ffc96bc76b080afa23a3bc138862))
+* **home:** fix targeting for github ([d3fc6e8](https://github.com/PedroHenry-Santos/AluraQuiz-TW3/commit/d3fc6e807b7c0ea66e058cc2773df110f30b5413))
+
 # Change Log
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
