@@ -104,7 +104,7 @@ const Home: React.FC = () => {
         </Widget>
         <Footer />
       </QuizContainer>
-      <GitHubCorner projectUrl="https://github.com/PedroHenry-Santos" />
+      <GitHubCorner projectUrl="https://github.com/PedroHenry-Santos/AluraQuiz-TW3" />
     </QuizBackground>
   );
 };
