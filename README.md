@@ -14,14 +14,14 @@
 
 # :page_with_curl: Índice
 
-* [Sobre o projeto](#sobre-o-projeto)
-* [Tecnologias utilizadas](#Tecnologias-utilizadas)
-* [Funcionalidades](#Funcionalidades)
-  - [Leitor com EpubJS](#Leitor-com-EpubJS)
-  - [Fala para leitura com WEB Speech API](#Fala-para-leitura-com-WEB-Speech-API)
-  - [Animações com o Lottie](#Animações-com-o-Lottie)
-* [Instalação](#instalação)
-* [Usando o projeto](#Usando-o-projeto)
+* [Sobre o projeto](#interrobang-sobre-o-projeto)
+  - [Tecnologias utilizadas](#-tecnologias-utilizadas)
+* [Executando a aplicação](#rocket-executando-a-aplicação)
+  - [Modificando estilos e temas do Quiz](#pencil2-modificando-estilos-e-temas-do-quiz)
+* [Para contribuir](#mailbox-para-contribuir)
+  - [Roteiro de funcionalidade da aplicação](#heavy_check_mark-roteiro-de-funcionalidade-da-aplicação)
+  - [Histórico de atualizações](#clock10-histórico-de-atualizações)
+
 
 
 # :interrobang: Sobre o projeto
@@ -140,7 +140,7 @@ Todas as cores base, imagem de fundo e conteúdo de questões se encontra neste 
 <br/><br/>
 Temos o campo ``"external"`` onde é possível colocar o link dá API publica de outras pessoas (obs.: Não é necessário ter um Front e sim uma API que fornece um ``db.json`` hospedado em algum lugar). Por último temos ``theme`` onde estão as cores e algumas definições de estilos.
 
-# Para contribuir
+# :mailbox: Para contribuir
 
 Caso queira ajudar a implementar novas funcionalidade nessa aplicação, poderá seguir o **roteiro de funcionalidades** a seguir. Ou também poderá propor sua própria funcionalidade.<br/><br/>
 Para isso basta seguir o [roteiro](https://github.com/PedroHenry-Santos/AluraQuiz-TW3/blob/main/CONTRIBUTING.md) em CONTRIBUTING.
@@ -157,7 +157,7 @@ Para isso basta seguir o [roteiro](https://github.com/PedroHenry-Santos/AluraQui
 -   [ ] Interatividade através de sons                        (:construction: Em desenvolvimento)
 -   [ ] Temas dark e light                                    (:construction: Em desenvolvimento)
 
-## Historico de atualizações
+## :clock10: Historico de atualizações
 
 Para saber sobre as [versões](https://github.com/PedroHenry-Santos/AluraQuiz-TW3/releases) deste codigo consulte o CHANGELOG detalhado.
 
