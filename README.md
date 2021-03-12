@@ -26,53 +26,29 @@
 
 # :interrobang: Sobre o projeto
 
-A Alura promoveu uma imersão sobre React onde o objetivo era mostrar os benefícios da utilização no NextJS, um framework que permite renderização pelo lado servidor, geração de páginas estáticas, deploy da aplicação de maneira facilitada com a melhor infraestrutura possível e facilitar a utilização de SEO (Search Engine Optimization) com React. Assim, fornecendo uma melhora no desempenho na aplicação.<br/><br/> Nesta imersão foi proposto o desenvolvido uma pagina de 'quiz' temática que pudesse abordar vários assuntos, utilizando as ferramentas do React (useStates, useEffect e componentização) e as funcionalidades do NextJS (GetServerSideProps, useRouter). Além da utilização de CSS-in-JS através do Styled-Components, ferramentad de padronização de códigos como Prettier, ESLint e EditorConfig, animações declarativas de componentes usando o Framer-Motion e animações de carregamento com o Lottie. Indo um pouco além do proposto, foi utilizado em toda aplicação o TypeScript que um conjunto de ferramentas em cima do JavaScript que adiciona tipagem estática no ambiente de desenvolvimento.<br/><br/>O tema escolhido para minha aplicação foi sobre o jogo The Witcher 3: Wild Hunt, um jogo com elementos de RPG muito premiado. Onde foram realizadas perguntas sobre o jogo e o ambiente em volta dele, no final foi adicionado a possibilidade de jogar com outros temas relacionados a cultura POP.
+A Alura promoveu uma imersão sobre React onde o objetivo era mostrar os benefícios da utilização no NextJS, um framework que permite renderização pelo lado servidor, geração de páginas estáticas, deploy da aplicação de maneira facilitada com a melhor infraestrutura possível e facilitar a utilização de SEO (Search Engine Optimization) com React. Assim, fornecendo uma melhora no desempenho na aplicação.<br/><br/> Nesta imersão foi proposto o desenvolvido uma pagina de 'quiz' temática que pudesse abordar vários assuntos, utilizando as ferramentas do React (useStates, useEffect e componentização) e as funcionalidades do NextJS (GetServerSideProps, useRouter). Além da utilização de [CSS-in-JS](https://en.wikipedia.org/wiki/CSS-in-JS) através do Styled-Components, ferramentad de padronização de códigos como Prettier, ESLint e EditorConfig, animações declarativas de componentes usando o Framer-Motion e animações de carregamento com o Lottie. Indo um pouco além do proposto, foi utilizado em toda aplicação o TypeScript que um conjunto de ferramentas em cima do JavaScript que adiciona tipagem estática no ambiente de desenvolvimento.<br/><br/>O tema escolhido para minha aplicação foi sobre o jogo The Witcher 3: Wild Hunt, um jogo com elementos de RPG muito premiado. Onde foram realizadas perguntas sobre o jogo e o ambiente em volta dele, no final foi adicionado a possibilidade de jogar com outros temas relacionados a cultura POP.
 
 ## 🧑‍💻 Tecnologias utilizadas
 
-### :link: JavaScript
+### :link: Ferramentas
 
-JavaScript® (às vezes abreviado para JS) é uma linguagem leve, interpretada e baseada em objetos com funções de primeira classe, mais conhecida como a linguagem de script para páginas Web, mas usada também em vários outros ambientes sem browser, tais como node.js,  Apache CouchDB e Adobe Acrobat. O JavaScript é uma linguagem baseada em protótipos, multi-paradigma e dinâmica, suportando estilos de orientação a objetos, imperativos e declarativos (como por exemplo a programação funcional). Saiba mais sobre o JavaScript. [Saíba mais...](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript)
+* [JavaScript](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript)
+* [NodeJS](https://pt.wikipedia.org/wiki/Node.js)
+* [TypeScript](https://www.typescriptlang.org/pt/)
+* [ReactJS](https://pt-br.reactjs.org/)
+* [NextJS](https://nextjs.org/docs/getting-started)
+* [Styled-Components](https://styled-components.com/docs)
 
-### :link: NodeJS
+### :link: Padronização de código
 
-JavaScript® (às vezes abreviado para JS) é uma linguagem leve, interpretada e baseada em objetos com funções de primeira classe, mais conhecida como a linguagem de script para páginas Web, mas usada também em vários outros ambientes sem browser, tais como node.js,  Apache CouchDB e Adobe Acrobat. O JavaScript é uma linguagem baseada em protótipos, multi-paradigma e dinâmica, suportando estilos de orientação a objetos, imperativos e declarativos (como por exemplo a programação funcional). Saiba mais sobre o JavaScript. [Saíba mais...](https://pt.wikipedia.org/wiki/Node.js)
+* [Prettier](https://prettier.io/)
+* [ESLint](https://eslint.org/)
+* [EditorConfig](https://editorconfig.org/)
 
-### :link: TypeScript
+### :link: Animações e movimentações
 
-TypeScript é uma linguagem de código aberto que se baseia em JavaScript, uma das ferramentas mais usadas do mundo, adicionando definições de tipo estático. [Saíba mais...](https://www.typescriptlang.org/pt/)
-
-### :link: ReactJS
-
-React é uma biblioteca JavaScript declarativa de código aberto, eficiente e flexível para a criação de interfaces de usuário (UI). É mantido pelo Facebook, Instagram, outras empresas e uma comunidade de desenvolvedores individuais. [Saíba mais...](https://pt-br.reactjs.org/)
-
-### :link: NextJS
-
-Next.js é uma estrutura da web de desenvolvimento front-end React de código aberto que permite funcionalidades como renderização do lado do servidor e geração de sites estáticos para aplicativos da web baseados em React. [Saíba mais...](https://nextjs.org/docs/getting-started)
-
-### :link: Styled-Components
-
-Styled Components é uma biblioteca (lib) que utiliza o conceito de CSS-in-JS, ou seja, que nos permite escrever códigos CSS dentro do Javascript. Criando códigos dessa forma, podemos reaproveitar o CSS de um website de forma mais rápida e ainda escrevê-lo sem revezar entre estilos diferentes de escrita. [Saíba mais...](https://styled-components.com/docs)
-
-### :link: Prettier
-
-O Prettier é um code formatter livre de código aberto, que tem por finalidade "forçar" um padrão de código. Ele realiza isso analisando o seu código e alterando-o de acordo com regras pré-definidas. [Saíba mais...](https://prettier.io/)
-
-### :link: ESLint
-
-ESLint é uma ferramenta de análise de código estática para identificar padrões problemáticos encontrados no código JavaScript. Que pode ser integrada ao TypeScript assim auxiliando na identificação incongruências. [Saíba mais...](https://eslint.org/)
-
-### :link: EditorConfig
-
-EditorConfig consiste em um formato de arquivo para definir estilos de codificação e uma coleção de plugins de editores de texto e IDEs que permitem ler esse formato do arquivo para adequar o código aos estilos definidos. [Saíba mais...](https://editorconfig.org/)
-
-### :link: Framer Motion
-
-Uma biblioteca de movimento de componentes pronta para produção para React. [Saíba mais...](https://www.framer.com/motion/)
-
-### :link: Lottie
-
-O Lottie é uma biblioteca focada em animação, ela trabalha em conjunto com um plugin do After Effects que se chama 'body movin' onde a função desse plugin é simplesmente pegar a animação que acabou de ser desenhada e converter tudo aquilo para um objeto JSON que atualmente é um formato interpretado na web. [Saíba mais...](https://github.com/airbnb/lottie-web)
+* [Framer Motion](https://www.framer.com/motion/)
+* [Lottie](https://github.com/airbnb/lottie-web)
 
 # :rocket: Executando a aplicação
 
