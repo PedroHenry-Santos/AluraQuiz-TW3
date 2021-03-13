@@ -60,7 +60,7 @@ ou
 
     git clone git@github.com:PedroHenry-Santos/AluraQuiz-TW3.git
 
-Após basta utilizar instalar a dependência utilizando o gerenciador de pacote de sua preferência. Conforme abaixo:
+Após basta instalar as dependência utilizando o gerenciador de pacote de sua preferência. Conforme abaixo:
 
     yarn install
 
@@ -135,9 +135,9 @@ Para um acompanhamento mais atualizado verifique a aba [Projeto](https://github.
 -   [ ] Interatividade através de sons                        (:construction: Em desenvolvimento)
 -   [ ] Temas dark e light                                    (:construction: Em desenvolvimento)
 
-## :clock10: Historico de atualizações
+## :clock10: Histórico de atualizações
 
-Para saber sobre as [versões](https://github.com/PedroHenry-Santos/AluraQuiz-TW3/releases) deste codigo consulte o CHANGELOG detalhado.
+Para saber sobre as [versões](https://github.com/PedroHenry-Santos/AluraQuiz-TW3/releases) deste código consulte o CHANGELOG detalhado.
 
 # :lock: Licença
 
